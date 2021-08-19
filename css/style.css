@@ -80,7 +80,7 @@ body:before {
     color: white;
 }
 #name-id-form input:nth-child(1){
-    width: 20%;
+    width: 300px;
 }
 #name-id-form input[type="number"]::-webkit-outer-spin-button,
 #name-id-form input[type="number"]::-webkit-inner-spin-button {
@@ -88,11 +88,11 @@ body:before {
     margin: 0;
 }
 #name-id-form input:nth-child(2){
-    width: 5%;
+    width: 100px;
 }
 #name-id-form input:nth-child(4){
     margin-top: 1%;
-    width: 5%;
+    width: 70px;
     cursor: pointer;
     border: none;
 }
