@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>고려대 종강시계</title>
+</head>
+<body>
+    <div class="container">
+        <div id="title">
+            <h1>고려대 종강시계</h1>
+        </div>
+        <div id="ending-clock">
+            <span>종강까지</span>
+            <br>
+            <span>00일 00시간 00분 00초</span>
+        </div>
+        <div id="ni">
+            <form id="name-id-form" class='hidden'>
+                <input type="text" required maxlength="15" placeholder="이름을 입력해 주세요">
+                <input type="number" required max="21" min="0" placeholder="학번">
+                <br>
+                <input type="submit" value="저장">
+            </form>
+            <div id="enter-clock" class="hidden">
+                <span>000님, 입학한지 000일 째</span>
+                <br>
+                <span>이름, 학번 수정하기</span>
+            </div>
+        </div>
+        <div id="links">
+            <ul>
+                <li><a href="http://www.korea.ac.kr/mbshome/mbs/university/index.do"><img src="image/1.png"><span>홈페이지</span></a></li>
+                <li><a href="https://portal.korea.ac.kr/front/Intro.kpd#"><img src="image/2.png"><span>포털</span></a></li>
+                <li><a href="https://library.korea.ac.kr/"><img src="image/3.png"><span>도서관</span></a></li>
+                <li><a href="https://kulms.korea.ac.kr/"><img src="image/4.png"><span>블랙보드</span></a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="js/name-id.js"></script>
+    <script src="js/ending-clock.js"></script>
+    
+</body>
+</html>
