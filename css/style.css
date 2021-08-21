@@ -9,10 +9,12 @@ body, div, h1, span, ul {
     text-align: center;
 }
 body {
-    background: url('../image/0.jpg') no-repeat;
+    height: 100vh;
+    background-image: url('../image/0.jpg');
+    background-repeat : no-repeat;
+    background-size : cover;
     font-family: 'Jua', sans-serif;
     color: white;
-    font-size: 62.5%;
 }
 body:before {
     content: "";
@@ -38,7 +40,7 @@ body:before {
     padding-top: 10px;
 }
 #title h1{
-    font-size: 2.5em;
+    font-size: 3vmin;
     font-weight: 500;
 }
 #ending-clock {
@@ -48,10 +50,10 @@ body:before {
     top: 25%;
 }
 #ending-clock span:first-child {
-    font-size: 3.5em;
+    font-size: 4vmin;
 }
 #ending-clock span:last-child {
-    font-size: 9em;
+    font-size: 9vmin;
 }
 #ni {
     width: 100%;
@@ -60,10 +62,10 @@ body:before {
     top: 47%;
 }
 #enter-clock span:first-child{
-    font-size: 4em;
+    font-size: 4vmin;
 }
 #enter-clock span:last-child{
-    font-size: 2em;
+    font-size: 2vmin;
     cursor: pointer;
     text-decoration: underline;
 }
@@ -71,7 +73,7 @@ body:before {
     background: none;
     font-family: 'Jua', sans-serif;
     color: white;
-    font-size: 3em;
+    font-size: 3vmin;
     border: none;
     border-bottom: 1px solid white;
     margin: 0 1%;
@@ -109,25 +111,25 @@ body:before {
     justify-content: center;
 }
 #links ul li{
-    width: 100px;
-    height: 100px;
+    width: 10vmin;
+    height: 10vmin;
     margin: 0 2%;
 }
 #links ul li a img{
-    width: 60px;
-    height: 60px;
+    width: 6vmin;
+    height: 6vmin;
     margin: 0 auto 10% auto;
 
 }
 #links ul li a{
     display: flex;
-    width: 100px;
-    height: 100px;
+    width: 10vmin;
+    height: 10vmin;
     flex-direction: column;
     justify-content: center;
     text-decoration: none;
 }
 #links ul li a span{
     color: white;
-    font-size: 2em;
+    font-size: 2vmin;
 }
