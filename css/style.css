@@ -12,10 +12,11 @@ body {
     height: 100vh;
     background-image: url('../image/0.jpg');
     background-repeat : no-repeat;
-    background-position: right top;
+    background-position: center center;
     background-size : cover;
     font-family: 'Jua', sans-serif;
     color: white;
+    text-shadow: 2px 2px 2px black;
 }
 body:before {
     content: "";
@@ -118,7 +119,7 @@ body:before {
     border-radius: 20%;
 }
 #links ul li:hover{
-    background-color: rgba(255,255,255,0.3);
+    background-color: rgba(0,0,0,0.6);
 }
 #links ul li a img{
     width: 6vmin;
