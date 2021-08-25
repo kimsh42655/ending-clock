@@ -3,7 +3,10 @@
 .hidden {
     display: none;
 }
-body, div, h1, span, ul {
+a {
+    text-decoration: none;
+}
+body, div, h1, span, ul, h2 {
     margin: 0;
     padding: 0;
     text-align: center;
@@ -36,14 +39,99 @@ body:before {
 }
 #title {
     position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
     top: 0;
-    width: 100%;
+    width: 20%;
     height: 10%;
     padding-top: 10px;
 }
 #title h1{
     font-size: 3vmin;
     font-weight: 500;
+}
+#notice{
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-top: 10px;
+    width: 40%;
+    height: 24%;
+    z-index: 10;
+    text-align: left;
+}
+#notice > span{
+    padding-left: 20px;
+    text-align: left;
+    font-size: 2vmin;
+    font-weight: 300;
+    cursor: pointer;
+}
+#notice #notice-box{
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 16px;
+    text-align: left;
+    height: 230px;
+    width: 470px;
+    background-color: rgba(0,0,0,0.6);
+    text-shadow: none;
+}
+#notice-box .box-title a span{
+    color: white;
+    font-size: 25px;
+}
+#notice-box > span {
+    padding-left: 10px;
+    font-size: 18px;
+}
+#notice-box ul{
+    margin-top: 10px;
+    list-style: none;
+    text-align: left;
+}
+#notice-box ul li {
+    padding-left: 10px;
+}
+#notice-box ul li a:hover{
+    border-bottom: 1px white solid;
+}
+#notice-box ul li span{
+    display: inline-block;
+    text-align: left;
+    height: 18px;
+    font-size: 16px;
+    color: white;
+}
+#notice-box ul li .date{
+    width: 45px;
+}
+#notice-box ul li .title{
+    width: 390px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+#notice-box #page{
+    margin-top: 7px;
+    text-align: left;
+    padding-left: 20px;
+    font-size: 14px;
+}
+#notice-box #page .pagenumber{
+    display:inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 0 5px 0 5px;
+    border: 1px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#notice-box #page .pagenumber.clicked{
+    color: black;
+    background: white;
 }
 #ending-clock {
     width: 100%;
