@@ -1,6 +1,6 @@
 const clock = document.querySelectorAll('#ending-clock span');
-const isvacation = true;
-const nextdate = new Date(2021,8,1);
+const isvacation = false;
+const nextdate = new Date(2021,11,21);
 
 
 function getClock(){
